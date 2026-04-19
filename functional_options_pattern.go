@@ -1,4 +1,4 @@
-package gopractice
+package main
 
 import (
 	"time"
@@ -59,7 +59,7 @@ func NewServer(opts ...Option) *Server {
 	return s
 }
 
-func main() {
+func FunctionalOptionsPattern() {
 	NewServer(WithTimeout(1000)) // ①
 
 	NewServer(WithTimeout(1000), WithIsDebug(true)) // ②
